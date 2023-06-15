@@ -9,7 +9,7 @@
 Add this line in your `.tmux.conf`
 
 ```bash
-set -g @plugin 'o0th/tmux-nova'
+set -g @plugin 'ya-suke/tmux-nova'
 ```
 
 Hit <kbd>Prefix</kbd> + <kbd>I</kbd> to fetch the plugin and source it.
@@ -19,7 +19,7 @@ Hit <kbd>Prefix</kbd> + <kbd>I</kbd> to fetch the plugin and source it.
 Clone the repository
 
 ```bash
-git clone git@github.com:o0th/tmux-nova.git ~/.tmux/plugins/tmux-nova
+git clone git@github.com:ya-suke/tmux-nova.git ~/.tmux/plugins/tmux-nova
 ```
 
 Add this line in your `.tmux.conf`
@@ -39,7 +39,7 @@ tmux source-file ~/.tmux.conf
 To achieve the screenshot look use this configuration
 
 ```bash
-set -g @plugin 'o0th/tmux-nova'
+set -g @plugin 'ya-suke/tmux-nova'
 
 set -g @nova-nerdfonts true
 set -g @nova-nerdfonts-left 
@@ -67,7 +67,7 @@ If you prefer the nord color palette
 </p>
 
 ```bash
-set -g @plugin 'o0th/tmux-nova'
+set -g @plugin 'ya-suke/tmux-nova'
 
 set -g @nova-nerdfonts true
 set -g @nova-nerdfonts-left 
