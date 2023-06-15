@@ -82,6 +82,8 @@ segments_left=$(get_option "@nova-segments-0-left" "")
 IFS=' ' read -r -a segments_left <<< $segments_left
 
 tmux set-option -g status-left ""
+tmux set-option -g status-left "#(cat #{socket_path}-\#{session_id}-vimbridge)"
+tmux set-option -g status-left-length 90
 
 first_left_segment=true
 for segment in "${segments_left[@]}"; do
@@ -157,6 +159,8 @@ segments_right=$(get_option "@nova-segments-0-right" "")
 IFS=' ' read -r -a segments_right <<< $segments_right
 
 tmux set-option -g status-right ""
+tmux set-option -g status-right "#(cat #{socket_path}-\#{session_id}-vimbridge-R)"
+tmux set-option -g status-right-length 90
 
 for segment in "${segments_right[@]}"; do
   segment_content=$(get_option "@nova-segment-$segment" "")
